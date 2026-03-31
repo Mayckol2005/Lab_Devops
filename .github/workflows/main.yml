@@ -16,7 +16,7 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
         with:
-          username: ${{ secrets.USER_DOCKERHUB }}
+          username: ${{ secrets.USEgit add index.htmlR_DOCKERHUB }}
           password: ${{ secrets.PASSWORD_DOCKERHUB }}
 
       - name: Build and push Docker image
@@ -24,4 +24,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: martinbazaa/aws-lab-frontend:latest
+          tags: martinbaza/aws-lab-frontend:latest
